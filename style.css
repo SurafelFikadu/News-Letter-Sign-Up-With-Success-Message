@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-mobile {
+    display: none !important;
+}
+
+#success {
+    display: none;
+    width: 480px;
+    background-color: white !important;
+    padding: 50px;
+    border-radius: 33px;
+}
+
+#h1-success {
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+#p-success {
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+#btn-success {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: hsl(234, 29%, 20%);
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 880px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 10px;
+    max-height: 1000px;
+    position: absolute;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+h1 {
+    padding: 20px 0;
+    font-size: 48px;
+}
+
+p, span {
+    padding: 10px 0;
+}
+
+form > div {
+    display: flex;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+legend {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid rgb(231, 217, 217);
+    outline: none;
+}
+
+button {
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+@media (1000px > width > 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    main {
+        width: 700px;
+        padding: 12px;
+        gap: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .img-desktop {
+        width: 300px;
+    }
+
+    legend {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    body {
+        color: hsl(234, 29%, 21%);
+    }
+
+    .img-mobile {
+        display: block !important;
+        width: 370px;
+
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    #success {
+        width: 350px;
+        height: 800px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    #success-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85%;
+    }
+
+    #icon-success {
+        width: 70px;
+    }
+
+    #h1-success {
+        font-size: 38px;
+    }
+
+}
