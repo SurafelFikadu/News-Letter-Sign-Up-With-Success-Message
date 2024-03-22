@@ -15,6 +15,11 @@ const displaySuccess = () => {
         main.style.display = "none";
         strongEmail.textContent = email.value;
     }
+    if(email.value == "") {
+        correct.style.display = "block";
+        correct.textContent = "Email Address is required";
+        correct.style.color = "red";
+    }
     else {
         correct.style.display = "block";
         correct.textContent = "Invaild Email Address";
@@ -26,6 +31,7 @@ const displayMain = () => {
     main.style.display = "flex";
     success.style.display = "none";
     correct.style.display = "none";
+    email.value = "";
 }
 
 btnMain.addEventListener("click", displaySuccess);
